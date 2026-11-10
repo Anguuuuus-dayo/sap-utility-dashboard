@@ -3,7 +3,6 @@ name: utility-dashboard
 description: >
   要件書 `requirements.md` から、任意テーマの SAP CAP + SAPUI5 ダッシュボードを一から生成する。ハンズオンワークショップ
   Phase 2 用 B 版スキル—— 業務内容は要件書が決め、技術的品質はスキルのレシピが保証する。
-disabled: true
 ---
 
 > ## 🚨 最重要・参照ルール（必読・例外なし）

@@ -2,33 +2,15 @@
 name: chrome-devtools-test
 description: >
   SAP CAP + SAPUI5 アプリ実装後に chrome-devtools MCP
-  サーバ（@modelcontextprotocol/server-puppeteer）を
-  使ってブラウザテストを実行する。要件書駆動の汎用版——特定のチャート ID やエンドポイントにハードコードせず、 $metadata とDOM
+  サーバ を使ってブラウザテストを実行する。要件書駆動の汎用版——特定のチャート ID やエンドポイントにハードコードせず、 $metadata とDOM
   自動探索で任意ダッシュボードをテストする。 起動確認・コンソールエラー検出・OData
   疎通確認・チャート描画確認・スクリーンショット保存（発表資料用）の手順を提供する。
 user-invocable: true
-allowed-tools:
-  - Read
-  - Write
-  - Bash(npx *)
-  - Bash(cds *)
-  - Bash(npm *)
-  - Bash(lsof *)
-  - mcp__chrome-devtools__puppeteer_navigate
-  - mcp__chrome-devtools__puppeteer_screenshot
-  - mcp__chrome-devtools__puppeteer_evaluate
-  - mcp__chrome-devtools__puppeteer_click
-  - mcp__chrome-devtools__puppeteer_fill
-  - mcp__chrome-devtools__puppeteer_hover
-  - mcp__chrome-devtools__puppeteer_select
-  - mcp__cds-mcp__*
-  - mcp__ui5-mcp-server__*
-disabled: true
 ---
 
 # /chrome-devtools-test — SAP UI5 アプリ ブラウザテストスキル（汎用版）
 
-Cline に事前設定済みの `chrome-devtools`（`@modelcontextprotocol/server-puppeteer`）を使って
+Cline に事前設定済みの `chrome-devtools` を使って
 `cds watch` 起動中の SAP CAP + SAPUI5 アプリをブラウザテストする。
 
 このスキルは要件書で定義した**任意テーマ**のダッシュボードに対応する（特定のチャート ID や

@@ -5,11 +5,6 @@ description: >
   Phase 2 のステップ1—— 参加者はアイデアの種だけ書き、AI が現実感ある業務要件へ膨らませる。 出力は後続の
   `/utility-dashboard` がそのまま実装に使う。
 user-invocable: true
-allowed-tools:
-  - Read
-  - Write
-  - Bash(ls *)
-disabled: true
 ---
 
 # /dashboard-requirements — ドラフト → 業務要件書 生成スキル
@@ -46,7 +41,7 @@ AI が業務ストーリーとして現実感を持って膨らませるのが�
 
 ### 2. 出力見本を確認する
 
-`sample-requirements.md`（発電所ダッシュボードの要件書例）を**書きぶりの手本**として参照する。
+`requirements-template.md`（発電所ダッシュボードの要件書例）を**書きぶりの手本**として参照する。
 - 業務背景 → 利用シーン → 見たい指標 → 画面構成、という流れで物語的に書かれている点を踏襲する。
 - ただし**テーマ・業務内容は必ず `draft.md` に従う**こと。見本の発電所ドメインの固定語
   （発電所・JEPX・原子炉 等）をドラフト外のテーマに流用しない。
@@ -143,7 +138,7 @@ AI が業務ストーリーとして現実感を持って膨らませるのが�
 
 ## ハードルール
 
-- **テーマ・業務内容は `draft.md` に従う**。見本（`sample-requirements.md`）のドメイン固定語を流用しない。
+- **テーマ・業務内容は `draft.md` に従う**。見本（`requirements-template.md`）のドメイン固定語を流用しない。
 - **具体的なコード・緯度経度・CSV 行は書かない**。それらは `/utility-dashboard` が §1 で導出する。
 - **「今回実装するスコープ」節を必ず含める**。手札（KPIカード/donut/line/bar/stacked_bar/heatmap/map）に対応づける。
 - `map` はドラフト §5 が「はい」のときだけスコープに入れる。
